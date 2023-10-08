@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "TTLakesMedium";
+    src: url("fonts/TTLakesMedium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "TTLakesRegular";
+    src: url("fonts/TTLakes-Regular.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width: 320px;
+    background: #FFF;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+
+.menu .header {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.menu .header .header-item:last-child {
+    margin: 0 24px 0 auto;
+}
+
+.menu .header .header-item:first-child {
+    margin-left: 24px;
+}
+
+.menu .header .header-logo {
+    margin-left: 16px;
+
+}
+
+.menu .menu-links {
+    list-style: none;
+    margin-top: 50px;
+    padding-left: 24px;
+}
+
+.menu .menu-links .menu-link {
+    margin-bottom: 32px;
+    color: #1B1C21;
+    ;
+    font-family: "TTLakesMedium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.2px;
+
+}
+
+.menu .menu-links .menu-link a {
+    transition: 0.3s;
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.menu .menu-links .menu-link a:hover {
+    color: #7E7E82;
+    cursor: pointer;
+}
+.menu .menu-links .menu-link a::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 32px;
+    flex-shrink: 0;
+    background: url("prefab/highlight.svg") no-repeat;
+    background-size: contain;
+    left: -5px;
+    transform: translateY(-5%);
+    transition: 0.3s;
+   
+}
+.menu .menu-links .menu-link a:hover::before {
+    left: 0;
+}
+
+.menu-contacts{margin-bottom: 40px;}
+.menu-contacts .contacts-icon {
+    margin: 172px 0 16px 0;
+}
+
+.menu-contacts .contacts-icon .icon {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.menu-contacts,
+.menu-lang {
+    padding-left: 16px;
+    padding-bottom: 32px;
+}
+
+.menu-lang .lang {
+    display: inline-block;
+    color: #1B1C21;
+    font-family: "TTLakesMedium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.2px;
+    margin-right: 7px;
+}
+
+.menu-lang .lang:hover{
+    color: #7E7E82;
+    cursor: pointer;
+}
+
+.menu .menu-contacts .contact-phone {
+    color: #1B1C21;
+    font-family: "TTLakesMedium";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 133.333% */
+    letter-spacing: -0.6px;
+}
+
+.menu .icon img {
+    transition: .35s;
+}
+
+.menu .icon:hover img {
+    filter: drop-shadow(5px 5px 20px red) invert(75%);
+    cursor: pointer;
+}
+.menu .header-close:hover img{
+    transform: rotate(180deg);
+}
+
+.menu .menu-contacts .contact-mail {
+    color: #1B1C21;
+    font-family: "TTLakesMedium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.2px;
+    margin-bottom: 12px;
+}
+
+.menu .menu-contacts .contact-phone:hover{
+    cursor: pointer;
+    color: #7E7E82;
+}
